@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
+// Require product models
 const Product = require("../../models/products");
 
+// Finding the products example like Necklace, and Bracelate
 router
   .get("/", async (req, res) => {
     const allProduct = await Product.find({});

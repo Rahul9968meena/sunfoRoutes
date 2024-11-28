@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// Jewellery Schema
 const jewellerySchema = new Schema({
   name: {
     type: String,

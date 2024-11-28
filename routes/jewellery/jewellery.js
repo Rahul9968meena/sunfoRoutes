@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
+// Using Slugify
 const slugify = require("slugify");
 const Jewellery = require("../../models/jewellery");
 const Category = require("../../models/categories");
@@ -22,6 +23,7 @@ async function createUniqueSlug(title) {
   return slug;
 }
 
+// Using post router working on jewellery router
 router
   .post("/", async (req, res) => {
     const { name, price, discountPrice, imageUrl, brandName } = req.body;
