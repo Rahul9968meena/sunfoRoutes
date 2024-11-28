@@ -14,7 +14,7 @@ const productSchema = new Schema({
   jewellery: [
     {
       type: Schema.Types.ObjectId,
-      ref: "Categary",
+      ref: "Jewellery",
     },
   ],
 });
