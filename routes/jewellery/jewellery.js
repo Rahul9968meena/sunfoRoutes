@@ -121,7 +121,7 @@ router
     }
   })
   .patch("/:id/edit", async (req, res) => {
-    const { name, slug, price, discountPrice, imageUrl, brandName } = req.body;
+    //const { name, slug, price, discountPrice, imageUrl, brandName } = req.body;
     try {
       const updatedJewellery = await Jewellery.findOneAndUpdate(
         req.params.id,
